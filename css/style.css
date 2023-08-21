@@ -1,0 +1,545 @@
+* {
+    /* Reseting */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 63%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+  
+}
+
+:root {
+    --green: #57dc32;
+    --red: #ff2828;
+    --black: #2d2929;
+    --light-colour: #666;
+    --light-bg: #e8e8e8;
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, -1);
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    color: none;
+}
+
+/* Header Section Starts */
+header {
+    font-family: sans-serif;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 7%;
+    z-index: 100000;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    font-family: 'Rubik', sans-serif;
+}
+
+header .logo {
+    color: var(--black);
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+header .logo p {
+    color: var(--green);
+}
+
+header .navbar a {
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: var(--light-colour);
+    background: var(--light-bg);
+}
+
+header img {
+    height: 5vh;
+    width: 10vh;
+}
+
+header .navbar a.active,
+header .navbar a:hover {
+    color: #fff;
+    background: var(--green);
+}
+
+header .icon i {
+    display: none;
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    color: var(--black);
+    border-radius: 50%;
+    background: var(--light-bg);
+}
+
+header .icon i:hover {
+    color: #fff;
+    background-color: var(--green);
+    transform: rotate(360deg);
+}
+
+/* Header Section Ends */
+
+
+
+/* Section  */
+section {
+    padding: 2rem 9%
+}
+
+section:nth-child(even) {
+    background: #eee;
+}
+
+.home .home-slider .slide {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 9rem;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.home .home-slider .slide .content {
+    flex: 1 1 45rem;
+}
+
+.home .home-slider .slide .img {
+    flex: 1 1 45rem;
+}
+
+.home .home-slider .slide img {
+
+    width: 100%;
+}
+
+.home .home-slider .slide .content span {
+    color: var(--green);
+    font-size: 2.5rem;
+}
+
+.home .home-slider .slide .content h3 {
+    color: var(--black);
+    font-size: 6rem;
+    
+}
+
+.home .home-slider .slide .content p {
+    color: var(--light-colour);
+    font-size: 2rem;
+    padding: .5rem 0;
+
+}
+
+/* Veg Section Begins */
+.veg h3 {
+    text-align: center;
+    font-size: 2em;
+    color: var(--green);
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+.veg .veg-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+.veg .veg-container img {
+    height: 18rem;
+}
+
+.veg .veg-container .veg-item {
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: .4rem;
+    border: .2rem solid rgba(0, 0, 0, .2);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.veg .veg-container .veg-item #foodInfo {
+    color: var(--black);
+    font-size: 2.5rem;
+}
+
+.veg .veg-container .veg-item .star {
+    padding: 1rem 0;
+}
+
+.veg .veg-container .veg-item .star i {
+    font-size: 1.8rem;
+    color: var(--green);
+}
+
+.veg .veg-container .veg-item #price {
+    color: var(--green);
+    font-size: 2.5rem;
+    font-weight: bolder;
+
+}
+
+/* Non Veg SecTion */
+.nonveg h3 {
+    text-align: center;
+    font-size: 2em;
+    color: var(--red);
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    font-family: 'Rubik', sans-serif;
+}
+
+.nonveg .nonveg-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+.nonveg .nonveg-container img {
+    height: 18rem;
+}
+
+.nonveg .nonveg-container .nonveg-item {
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: .4rem;
+    border: .2rem solid rgba(0, 0, 0, .2);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.nonveg .nonveg-container .nonveg-item #foodInfo {
+    color: var(--black);
+    font-size: 2.5rem;
+}
+
+.nonveg .nonveg-container .nonveg-item .star {
+    padding: 1rem 0;
+}
+
+.nonveg .nonveg-container .nonveg-item .star i {
+    font-size: 1.8rem;
+    color: var(--red);
+}
+
+.nonveg .nonveg-container .nonveg-item #price {
+    color: var(--red);
+    font-size: 2.5rem;
+    font-weight: bolder;
+
+}
+
+/* Review Section */
+.reviews h3 {
+    text-align: center;
+    font-size: 2em;
+    color: var(--green);
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    font-family: 'Rubik', sans-serif;
+}
+
+.reviews .review-slider .slide {
+
+    margin-top: 2rem;
+    padding: 2rem;
+    border-radius: .4rem;
+    border: .2rem solid rgba(0, 0, 0, .2);
+    box-shadow: var(--box-shadow);
+    width: 50rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+.reviews .slide .user {
+    display: flex;
+    gap: 1.5rem;
+    padding-bottom: 1.5rem;
+    align-items: center;
+
+}
+
+.reviews .slide .user i {
+    font-size: 9rem;
+}
+
+.reviews .slide .user #com {
+    font-size: 4.5rem;
+    padding-bottom: 2rem;
+}
+
+.reviews .slide .user h2 {
+    color: var(--black);
+    padding-bottom: 1rem;
+    font-size: 4rem;
+}
+
+.reviews .slide .user .star i {
+    font-size: 2.8rem;
+    color: var(--green);
+}
+
+.reviews .slide p {
+    color: var(--light-colour);
+    line-height: 1.0;
+    font-size: 1.9rem;
+}
+
+/* Order Section */
+.order h2 {
+    text-align: center;
+    font-size: 2em;
+    color: var(--green);
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.order form {
+    max-width: 90rem;
+    border-radius: .4rem;
+    border: .2rem solid rgba(0, 0, 0, .2);
+    box-shadow: var(--box-shadow);
+    background: #fff;
+    padding: 1.5rem;
+    margin: 0 auto;
+    justify-content: center;
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+.order form .form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+.order form .form .formgrp {
+    width: 49%;
+}
+
+.order form .form .formgrp label {
+    display: block;
+    padding: .5rem 0;
+    font-size: 2rem;
+    color: var(--light-colour);
+    cursor: pointer;
+}
+
+.order form .form .formgrp input,
+.order form .form .formgrp textarea {
+    background: #fff;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: var(--black);
+    text-transform: none;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.order form .form .formgrp input:focus,
+.order form .form .formgrp textarea:focus {
+    border: .2rem solid var(--green);
+}
+
+.order form .form .formgrp textarea {
+    height: 10rem;
+    resize: none;
+}
+
+.order form .form .formgrp span {
+    text-align: center;
+    font-size: 1.5em;
+    color: var(--green);
+    padding-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+.btn {
+    width: 49%;
+    padding: 8px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--black);
+    color: var(--green);
+    cursor: pointer;
+    margin-top: .2rem;
+}
+
+.btn:hover {
+    background-color: var(--green);
+    color: #fff;
+}
+
+/* order Validation */
+.tempbg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--green);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.tempText {
+    background-color: #fff;
+    padding: 5rem;
+    border-radius: 5px;
+    max-width: 400px;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+.tempText h4 {
+    font-size: 3rem;
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+#tempBtn {
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    border-radius: .2rem;
+    border: none;
+    background-color: var(--green);
+    color: #fff;
+    cursor: pointer;
+
+}
+
+/* footer */
+footer .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1rem;
+    margin-left: 2rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+footer .container .box h2 {
+    margin-top: .5rem;
+    padding: .5rem 0;
+    font-size: 2.3rem;
+    color: var(--black);
+    font-family: 'Rubik', sans-serif;
+}
+
+footer .container .box span,
+footer .container .box a {
+    display: block;
+    color: var(--light-colour);
+    padding: .5rem 0;
+    font-size: 1.4rem;
+}
+
+footer .container .box span:hover,
+footer .container .box a:hover {
+    text-decoration: underline;
+    color: var(--green);
+}
+
+footer .container .box span:hover {
+    cursor: default;
+}
+
+footer .copy {
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem 0;
+    margin-top: 3rem;
+    color: var(--black);
+    border-top: .2rem solid rgba(0, 0, 0, .2);
+    ;
+}
+
+footer .copy span {
+    color: var(--green);
+}
+
+
+
+/* Media Queries */
+
+@media (max-width:900px) {
+    html {
+        font-size: 54%;
+    }
+}
+
+@media (max-width:768px) {
+
+    header {
+        padding: 1rem 2rem;
+    }
+
+    header .icon i {
+        display: inline-block;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        padding: 1rem;
+        border-top: .1rem soild rgba(0, 0, 0, .2);
+        border-bottom: .1rem soild rgba(0, 0, 0, .2);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar a {
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        color: var(--light-colour);
+        background: var(--light-bg);
+    }
+
+    .veg .veg-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .order form .form .formgrp {
+        width: 100%;
+    }
+}
+
+/* End Of Code LOC=545 */
